@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 ENV HOST localhost
-ENV PORT port
+ENV PORT 80
 
 RUN apk update
 RUN apk add curl git php7 \
