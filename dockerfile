@@ -37,6 +37,6 @@ RUN redis-server --daemonize yes
 WORKDIR /drfts-tz
 
 RUN composer install && \
-  composer update && \
-  php -S ${HOST}:${PORT} -t public public/index.php
+  composer update
+CMD php -S ${HOST}:${PORT} -t public public/index.php
   
