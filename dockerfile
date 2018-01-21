@@ -38,5 +38,5 @@ WORKDIR /drfts-tz
 
 RUN composer install && \
   composer update && \
-  php -S {HOST}:{PORT} -t public public/index.php
+  php -S ${HOST}:${PORT} -t public public/index.php
   
