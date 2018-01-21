@@ -8,7 +8,7 @@ RUN apk add git php7 php7-mbstring redis-server && \
   curl -sS https://getcomposer.org/install | php -- --install-dir=/usr/loca/bin --filname=composer && \
 	chmod +x /usr/local/bin/composer
 
-MKDIR /drfts-tz
+RUN mkdir /drfts-tz
 
 WORKDIR /drfts-tz
 
